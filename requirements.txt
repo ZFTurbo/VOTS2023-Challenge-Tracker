@@ -1,0 +1,9 @@
+vot-toolkit
+vot-trax
+torch
+scikit-image
+segment-anything
+torch
+open_clip_torch
+scikit-learn
+xformers
