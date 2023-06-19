@@ -15,7 +15,7 @@ We created 2 trackers:
 For the usage please refer to [VOT Challenge Toolkit overview](https://www.votchallenge.net/howto/overview.html)
 
 ```
-    vot evaluate --workspace <workspace-path> <tracker-name>
+vot evaluate --workspace <workspace-path> <tracker-name>
 ```
 
 ## Quality comparison
