@@ -7,8 +7,8 @@ Our method depends on 2 models. First model is [Segment Anything](https://github
 tracker is zero-shot. This mean we didn’t train it on any tracking dataset. 
 
 We created 2 trackers:
-* [ZFTurbo_HSE_IPPM_tracker_SegmentAnything_and_CLIP.py](ZFTurbo_HSE_IPPM_tracker_SegmentAnything_and_CLIP.py) - main tracker
-* [ZFTurbo_HSE_IPPM_tracker_SegmentAnything_and_Dinov2.py](ZFTurbo_HSE_IPPM_tracker_SegmentAnything_and_Dinov2.py) - OpenCLIP is replaced with Dinov2
+* [ZFTurbo_HSE_IPPM_tracker_SegmentAnything_and_CLIP.py](ZFTurbo_HSE_IPPM_tracker_SegmentAnything_and_CLIP.py) - main tracker.
+* [ZFTurbo_HSE_IPPM_tracker_SegmentAnything_and_Dinov2.py](ZFTurbo_HSE_IPPM_tracker_SegmentAnything_and_Dinov2.py) - OpenCLIP is replaced with [Dinov2](https://github.com/facebookresearch/dinov2).
 
 ## Usage
 
@@ -39,8 +39,8 @@ VOT challenge contained 4 sequences for validation and 144 videos on test set. [
 ## Additional code
 
 We also created easy visualizer of tracker predictions. It can be useful to check results by eyes.
-* Visualize validation data: [utils/visualize_valid.py](utils/visualize_valid.py)
-* Visualize test data: [utils/visualize_test.py](utils/visualize_test.py)
+* Visualize validation data: [utils/visualize_valid.py](utils/visualize_valid.py).
+* Visualize test data: [utils/visualize_test.py](utils/visualize_test.py).
 
 ### Usage
 
@@ -56,7 +56,7 @@ the tracker will predict another random object.
 other frame).
 * Tracker doesn’t fix obvious failed cases (for example, if object on the next frame is too far
 away from the previous tracked position).
-* If there are several similar objects in video, then tracker works bad
+* If there are several similar objects in video, then tracker works bad.
 
 ## Citation
 
