@@ -1,5 +1,6 @@
 # VOT 2023 Challenge Trackers
-Repository which contains trackers for [VOTS2023 Challenge](https://www.votchallenge.net/vots2023/). The main task is to track given target through the full video. Initial target is given on first frame only as mask. Track is the set of masks throught the whole video. See the example below (_green - groundtruth, red - predicted, yellow - intersection_).  
+Repository which contains trackers for [VOTS2023 Challenge](https://www.votchallenge.net/vots2023/). The main task is to track given target through the full video. Initial target is given on first frame only as mask. Track is the set of masks throught the whole video. See the example below (_green - groundtruth, red - predicted, yellow - intersection_).      
+More details about our solution and challenge in our [blog on ACM](https://cacm.acm.org/blogs/blog-cacm/274374-vot-challenge-computer-vision-competition/fulltext).     
 
 ![giraffe-15](images/example.gif)
 
