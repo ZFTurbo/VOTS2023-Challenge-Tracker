@@ -1,7 +1,8 @@
 # VOT 2023 Challenge Trackers
 Repository which contains trackers for [VOTS2023 Challenge](https://www.votchallenge.net/vots2023/). The main task is to track given target through the full video. Initial target is given on first frame only as mask. Track is the set of masks throught the whole video. See the example below (_green - groundtruth, red - predicted, yellow - intersection_).      
+    
 More details about our solution and challenge in our [blog on ACM](https://cacm.acm.org/blogs/blog-cacm/274374-vot-challenge-computer-vision-competition/fulltext).     
-
+    
 ![giraffe-15](images/example.gif)
 
 Our method depends on 2 models. First model is [Segment Anything](https://github.com/facebookresearch/segment-anything) by Facebook based on VIT-H backbone. This model searches for the regions of interest and returns a set of masks. Next, [Open CLIP model](https://github.com/mlfoundations/open_clip) is used. With this model, we find vectors for each region of interest, as well as for all objects to be found. After that, cosine similarities between each proposed mask and each object are found. Then mask with maximum value of metric is chosen for the object. Tracker searches for all objects at once. We tried to keep tracker as simple as possible, with minimum heuristics. The
